@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import ntt.global.pojo.User;
+import ntt.global.util.JsonUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -73,5 +74,18 @@ public class TestController {
         mapper.setDateFormat(sdf);
         Date date=new Date();
         return mapper.writeValueAsString(date);
+    }
+
+    @RequestMapping(value = "/json/6")
+    @ResponseBody
+    public  String jsonTest6() throws JsonProcessingException {
+        Date date=new Date();
+        return JsonUtils.getJson(date);
+    }
+    @RequestMapping(value = "/json/7")
+    @ResponseBody
+    public  String jsonTest7() throws JsonProcessingException {
+        Date date=new Date();
+        return JsonUtils.getJson(date,"YYYY-MM-DD HH:mm:ss");
     }
 }
