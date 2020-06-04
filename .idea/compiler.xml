@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springmvc01servlet" />
-        <module name="springmvc05json" />
-        <module name="springmvc03anno" />
-        <module name="spring02hellospringmvc" />
         <module name="springmvc04controller" />
+        <module name="spring02hellospringmvc" />
+        <module name="springmvc01servlet" />
+        <module name="springmvc03anno" />
+        <module name="ssmmybatis" />
+        <module name="springmvc05json" />
       </profile>
     </annotationProcessing>
   </component>

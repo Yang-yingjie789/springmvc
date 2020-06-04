@@ -10,7 +10,21 @@
   <head>
     <title>$Title$</title>
   </head>
+
+  <script type="text/javascript">
+    function test(callid) {
+      if (callid){
+        alert(callid);
+      }else{
+        alert(callid);
+        return;
+      }
+
+    }
+  </script>
   <body>
-  $END$
+
+
+  <input type="button" value="12" onclick="test(null)">
   </body>
 </html>
