@@ -20,4 +20,14 @@
        update ssmbuild.books set bookName=#{bookName}, bookCounts=#{bookCounts}, detail=#{detail} where bookID=#{bookID}
     </insert>
 
+    <select id="queryBookByName" parameterType="java.lang.String" resultType="book">
+        select * from ssmbuild.books b where bookName=#{bookName}
+    </select>
+
+    <select id="queryBookByNames" parameterType="java.lang.String" resultType="book">
+        select * from ssmbuild.books b where bookName like "%"#{bookName}"%"
+    </select>
+
+
+
 </mapper>

@@ -25,4 +25,9 @@ public interface BookMapper {
     //根据 id 查询图书
     Book queryBookById(@Param("id") int bookID);
 
+    //根据图书名称模糊查询
+    Book queryBookByName(@Param("bookName") String bookName);
+    //根据图书名称模糊查询
+    List<Book> queryBookByNames(@Param("bookName") String bookName);
+
 }

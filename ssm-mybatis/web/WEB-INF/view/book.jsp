@@ -11,6 +11,6 @@
     <title>Book</title>
 </head>
 <body>
-
+${book}
 </body>
 </html>

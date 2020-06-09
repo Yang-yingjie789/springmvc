@@ -22,5 +22,9 @@ public interface BookService {
     int update(Book book);
     //根据 id 查询图书
     Book queryBookById(int bookID);
+    //根据图书名称模糊查询
+    Book queryBookByName(String bookName);
+    //根据图书名称模糊查询
+    List<Book> queryBookByNames(String bookName);
 
 }
